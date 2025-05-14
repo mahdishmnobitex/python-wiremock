@@ -6,15 +6,15 @@ from wiremock.resources.mappings import AllMappings, Mapping, MappingResponse
 class Mappings(BaseResource):
     @classmethod
     def endpoint(cls):
-        return "/mappings"
+        return "/__admin/mappings"
 
     @classmethod
     def endpoint_single(cls):
-        return "/mappings/{id}"
+        return "/__admin/mappings/{id}"
 
     @classmethod
     def endpoint_delete_by_metadata(cls):
-        return "/mappings/remove-by-metadata"
+        return "/__admin/mappings/remove-by-metadata"
 
     @classmethod
     def entity_class(cls):
